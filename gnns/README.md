@@ -22,3 +22,4 @@ Coloring nodes of based on node attributes.
 3. What is the output? label per node? label per graph? are the labels numerical or categorical?
 4. Does this code need to be run in the cluster (does it take too much time to train locally?)
 5. What performance metrics do you use for training and for testing?
+6. Did you use an interesting layer other than the linear layer for any of these models?
