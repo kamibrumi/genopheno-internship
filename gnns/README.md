@@ -13,7 +13,7 @@
 2. Preferred mini-batching. 
 3. Output is an int
 4. No, it does not need to be run on the cluster
-5. 5. Use MSE and MRE as the metric of accuracy
+5. Use MSE and MRE as the metric of accuracy
 6. Used SAGEConv
 This regression has not be completed because we started exploring other datasets but you can use code from predict number of edges to get results (just need to change the dataset). 
 
@@ -33,7 +33,7 @@ This regression has not be completed because we started exploring other datasets
 5. Use MSE and MRE as the metric of accuracy
 6. Using SAGEConv but not compatible with dataset and will try linear layer
 
-Currently running into error because graph structure does not match the structure of graphs from datasets we have previously worked on. 
+Currently running into error because graph structure (containing labels per node) does not match the graph structures from datasets we have previously worked on. 
 
 ## Sentiment Tree Regression.ipynb
 Experimental notebook, can delete
