@@ -21,3 +21,4 @@ Coloring nodes of based on node attributes.
 2. Add for each code above if you used mini-batching or just traditional sampling with no mini-batching.
 3. What is the output? label per node? label per graph? are the labels numerical or categorical?
 4. Does this code need to be run in the cluster (does it take too much time to train locally?)
+5. What performance metrics do you use for training and for testing?
