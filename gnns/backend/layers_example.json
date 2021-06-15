@@ -1,0 +1,19 @@
+{
+  "layers": [
+  {
+      "type": "DenseGraphConv",
+      "parameters": [
+          {"in_feats": 10},
+          {"out_feats": 2},
+          {"norm": "both"},
+          {"bias": true},
+          {"activation": null}
+      ]
+  },
+  {
+      "type": "SumPooling",
+      "parameters": []
+  }
+  ],
+  "n_layers": 2
+}
