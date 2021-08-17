@@ -1,19 +1,29 @@
 {
   "layers": [
   {
-      "type": "DenseGraphConv",
+      "type": "SGConv01",
       "parameters": [
-          {"in_feats": 10},
-          {"out_feats": 2},
-          {"norm": "both"},
-          {"bias": true},
-          {"activation": null}
+          {"in_feats": 5},
+          {"out_feats": 16},
+          {"bias": true}
       ]
   },
-  {
-      "type": "SumPooling",
-      "parameters": []
-  }
-  ],
-  "n_layers": 2
+      
+   {
+      "type": "SAGEConv02",
+      "parameters": [
+          {"in_feats": 16},
+          {"out_feats": 2},
+          {"aggregator_type": "mean"}
+      ]
+   }
+  ], 
+    
+  "hyperparameters":{
+      "optimizer": "Adam",
+      "epochs" : 100,
+      "lr" : 0.01, 
+      "batchs" : 1
+   }
 }
+
