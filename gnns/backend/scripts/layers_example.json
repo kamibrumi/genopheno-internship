@@ -1,0 +1,46 @@
+{
+    "layers": [
+       {
+          "type": "GraphConv01",
+          "parameters": [
+              {"in_feats": 1433},
+              {"out_feats": 16},
+              {"activation": "relu"}
+          ]
+       },
+
+       {
+          "type": "GraphConv02",
+          "parameters": [
+              {"in_feats": 16},
+              {"out_feats": 7}
+          ]
+       },
+
+       {
+          "type": "Dropout01",
+          "parameters": [
+              {"p": 0.5}
+          ]
+       }
+
+      ], 
+    
+     "optimizer":   {
+      "type": "Adam",
+      "parameters": 
+          {"lr": 1e-2,
+          "weight_decay": 5e-4}
+      
+    },
+         
+    "hyperparameters":{
+      "epochs" : 200
+    },
+    
+    "lossfunction": {
+        "type" : "CrossEntropyLoss",
+        "parameters" : {}
+    }
+}
+
